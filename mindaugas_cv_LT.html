@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mindaugas Samsonas - CV</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link href="/path/to/print.css" media="print" rel="stylesheet" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #ccc;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+
+      .a4-page {
+        width: 210mm;
+        height: 297mm;
+        background: white;
+        display: flex;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      .sidebar {
+        width: 38%;
+        background-color: #eae7e2;
+        padding: 30px 20px;
+        text-align: center;
+      }
+
+      .sidebar img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+      }
+
+      .sidebar p {
+        margin: 8px 0;
+        font-size: 14px;
+      }
+
+      .list-title {
+        font-weight: bold;
+        margin: 25px 0 10px;
+        font-size: 16px;
+        text-align: left;
+      }
+
+      .skills,
+      .languages {
+        text-align: left;
+        font-size: 14px;
+      }
+
+      .content {
+        width: 65%;
+        padding: 40px 30px;
+        overflow-y: auto;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 28px;
+      }
+
+      .subtitle {
+        color: #d69b6d;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+
+      .section {
+        margin-bottom: 25px;
+        margin-top: 50px;
+        padding: 0;
+      }
+
+      .section h2,
+      h3 {
+        font-size: 20px;
+        border-left: 4px solid #c4a584;
+        padding-left: 10px;
+        color: #333;
+      }
+
+      .job {
+        margin-bottom: 20px;
+      }
+
+      .job-title {
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      .job-company {
+        color: #9c8e84;
+        font-size: 14px;
+      }
+
+      .job-dates {
+        float: right;
+        font-size: 13px;
+        color: #555;
+      }
+
+      ul {
+        padding-left: 20px;
+        margin: 8px 0;
+        font-size: 14px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      li {
+        line-height: 1.5;
+      }
+      .contact-info > p {
+        text-align: left;
+      }
+      .contact-info,
+      .skills,
+      .languages {
+        margin-bottom: 40px;
+      }
+      .a4-page ~ .a4-page {
+        page-break-before: always;
+        margin-top: 50px;
+      }
+      .social-link {
+        color: black;
+        text-decoration: none;
+      }
+      .icon {
+        fill: none;
+        stroke: black;
+        stroke-width: 1.2;
+      }
+      .contact-line > a {
+        text-decoration: none;
+        color: black;
+      }
+
+      @media print {
+        body {
+          background: none;
+          padding: 0;
+          margin: 0;
+        }
+
+        .a4-page ~ .a4-page {
+          margin-top: 0;
+        }
+        .a4-page {
+          box-shadow: none;
+          width: 210mm;
+          height: 297mm;
+          margin: 0;
+        }
+
+        .sidebar,
+        .content {
+          page-break-inside: avoid;
+          margin-top: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="a4-page">
+      <div class="sidebar">
+        <img src="./img/me.jpg" alt="Profile Photo" />
+        <div class="contact-info">
+          <p>📞 +37067703621</p>
+          <p>✉️ mindaugas.ssamsonas@gmail.com</p>
+          <p>📍 Vilnius</p>
+          <p class="contact-line">
+            <a href="https://www.linkedin.com/in/mindaugas-samsonas/">
+              <i class="fa fa-linkedin-square"></i> mindaugas-samsonas
+            </a>
+          </p>
+          <p class="contact-line">
+            <a href="https://github.com/Mindzeuxas">
+              <i class="fa fa-github"></i> https://github.com/Mindzeuxas
+            </a>
+          </p>
+        </div>
+
+        <div class="skills">
+          <p class="list-title">Kompiuteriniai įgudžiai</p>
+          <p>C#</p>
+          <p>Java</p>
+          <p>JavaScript</p>
+          <p>NodeJS</p>
+          <p>React</p>
+          <p>HTML/CSS</p>
+        </div>
+
+        <div class="languages">
+          <p class="list-title">Kalbos</p>
+          <p>Lietuvių (gimtoji)</p>
+          <p>Anglų (C1)</p>
+        </div>
+      </div>
+
+      <div class="content">
+        <h1>Mindaugas Samsonas</h1>
+        <div class="subtitle">Fullstack developer (javascript)</div>
+
+        <p>
+          Esu būsimas „full-stack“ programuotojas, kuriam patinka spręsti
+          problemas. Nesvarbu, ar tai būtų nedidelė UI klaida, ar sudėtinga
+          „backend“ užduotis — dirbu atkakliai, kol randu sprendimą. Mėgstu
+          mokytis naujų technologijų, tobulinti savo įgūdžius ir kurti praktines
+          programas, kurios palengvina užduotis ir jų sprendimą.
+        </p>
+
+        <p>
+          Turiu Java, C#, JavaScript, HTML ir CSS pagrindus, šiuo metu tobulinu
+          tiek „frontend“, tiek „backend“ kūrimo įgūdžius — siekiu tapti
+          universaliu „full-stack“ programuotoju. Vertinu bendravimą, komandinių
+          įgūdžių svarbą ir dėmesį detalėms visame, ką darau.
+        </p>
+        <div class="section">
+          <h2>Išsilavinimas</h2>
+          <div class="job">
+            <div>
+              <span class="job-title">Frontend Developer Diploma</span>
+              <span class="job-dates">2025 Sausis – 2025 Liepa</span>
+            </div>
+            <div class="job-company">
+              Baltijos technologijų institutas, Vilnius
+            </div>
+            <p>
+              Baigiau intensyvią praktinę programą, skirtą šiuolaikinei
+              „frontend“ plėtrai. Įgijau praktinės patirties su HTML, CSS,
+              JavaScript ir adaptyviu UI dizainu. Sukūriau kelis mažus
+              projektus, taikydamas gerąsias „frontend“ architektūros praktikas.
+            </p>
+          </div>
+        </div>
+        <div class="job">
+          <div>
+            <span class="job-title">Java Professional Diploma</span>
+            <span class="job-dates"> 2018 rugsėjis – 2019 birželis</span>
+          </div>
+          <div class="job-company">
+            Vilniaus Technologijų Mokymo Centras, Vilnius
+          </div>
+          <p>
+            Studijavau core „Java“ programavimą, objektinio programavimo
+            principus ir pagrindines duomenų struktūras. Atlikau praktines
+            užduotis, susijusias su failų valdymu, daugiagijumu ir paprasta
+            žiniatinklio kūrimo veikla, naudojant „Java“ technologijas.
+          </p>
+        </div>
+        <div class="job">
+          <div>
+            <span class="job-title"
+              >Nebaigtas bakalauras, išmaniųjų įrenginių technologijos</span
+            >
+            <span class="job-dates">2014 rugsėjis – 2018 birželis</span>
+          </div>
+          <div class="job-company">Viko, Vilnius</div>
+          <p>
+            Kurso metu mokiausi elektronikos, įterptųjų sistemų programavimo ir
+            IoT technologijų. Įgijau platų supratimą apie išmaniųjų įrenginių
+            integraciją, nors programa nebuvo užbaigta.
+          </p>
+        </div>
+        <div class="job">
+          <div>
+            <span class="job-title">Junior C# Developer, Certificate</span>
+            <span class="job-dates">2011 rugsėjis – 2013 birželis</span>
+          </div>
+          <div class="job-company">NKKM, Vilnius</div>
+          <p>
+            Išmokau pagrindinius C# programavimo principus, dirbau su .NET,
+            „Windows Forms“ ir paprastomis darbalaukio programomis. Susitelkiau
+            į tvirtą programavimo logikos ir programinės įrangos kūrimo pagrindų
+            formavimą.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="a4-page">
+      <div class="sidebar">
+        <!-- Tuščia šoninė juosta, nes pasikartoja -->
+      </div>
+      <div class="content">
+        <div class="section">
+          <h2>Pagrindinė patirtis</h2>
+          <div class="job">
+            <div>
+              <span class="job-title">Backend/data processing</span>
+              <span class="job-dates">2019 rugpjūtis – 2019 rugsėjis</span>
+            </div>
+            <div class="job-company">Lietuvos paštas, Vilnius</div>
+            <p>
+              Sukūriau programos funkcijas, skirtas pagerinti laiškų generavimo
+              sistemos efektyvumą, ir tiesiogiai bendradarbiavau su klientais,
+              kad surinkčiau reikalavimus ir užtikrinčiau sprendimo atitikimą jų
+              poreikiams.
+            </p>
+          </div>
+
+          <div class="job">
+            <div>
+              <span class="job-title">Frontend/HTML, praktika</span>
+              <span class="job-dates">2019 liepa – 2019 rugpjūtis</span>
+            </div>
+            <div class="job-company">Lympo, Vilnius</div>
+            <p>
+              Sukūriau ir įgyvendinau naują tinklalapį kaip įmonės svetainės
+              dalį, užtikrinant adaptyvų dizainą ir atitikimą prekės ženklo
+              stiliui.
+            </p>
+          </div>
+        </div>
+        <div class="job">
+          <div>
+            <span class="job-title">Regex eilučių rašymas, praktika</span>
+            <span class="job-dates">2017 rugpjūtis – 2017 rugsėjis</span>
+          </div>
+          <div class="job-company">Media Press Group, Vilnius</div>
+          <p>
+            Kūriau ir modifikavau reguliariąsias išraiškas (regex), kad tiksliai
+            išgauti ir pataisyti duomenis iš TV programų sąrašų automatiniam PDF
+            generavimui.
+          </p>
+        </div>
+
+        <h3>Kita patirtis</h3>
+
+        <div class="job">
+          <div>
+            <span class="job-title">Daržovių prekių skyriaus darbuotojas</span>
+            <span class="job-dates">2023 rugsėjis – 2024 gruodis</span>
+          </div>
+          <p>
+            Visiškai perėmiau atsakomybę už vieną parduotuvės skyrių, tvarkiau
+            prekių likučius, užtikrinau patrauklų prekių pateikimą ir stebėjau
+            galiojimo datas. Taip pat glaudžiai bendradarbiavau su parduotuvės
+            vadovais, siekdamas palaikyti efektyvią atsargų apskaitą, ir pagal
+            poreikį padėjau klientams.
+          </p>
+        </div>
+
+        <div class="job">
+          <div>
+            <span class="job-title"
+              >Savarankiškai dirbantis pavežėjimo paslaugų vairuotojas</span
+            >
+            <span class="job-dates">2022 sausis – 2024 gruodis</span>
+          </div>
+
+          <p>
+            Teikiau pagal poreikį mobilumo paslaugas per skaitmenines
+            platformas, išlaikydamas aukštus vartotojų įvertinimus dėl
+            profesionalumo, punktualumo ir aiškaus bendravimo. Naudodamasis
+            technologijomis tvarkiau logistiką ir optimizavau maršrutus.
+          </p>
+        </div>
+
+        <div class="job">
+          <div>
+            <span class="job-title">Mažmeninės prekybos asistentas</span>
+            <span class="job-dates">2019 gruodis – 2022 sausis</span>
+          </div>
+          <p>
+            Dirbau intensyvaus lankytojų srauto mažmeninėje aplinkoje, kur
+            tvarkiau atsiskaitymus, apdorojau prekių grąžinimus ir atsakiau į
+            klientų užklausas. Šis vaidmuo padėjo man sustiprinti bendravimo ir
+            tarpasmeninius įgūdžius, išlaikant dėmesį detalėms dinamiškoje darbo
+            aplinkoje.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
