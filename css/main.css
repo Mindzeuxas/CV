@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #ccc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+
+  .a4-page {
+    width: 210mm;
+    height: 297mm;
+    background: white;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .sidebar {
+    width: 38%;
+    background-color: #eae7e2;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .sidebar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  .sidebar p {
+    margin: 8px 0;
+    font-size: 14px;
+  }
+
+  .list-title {
+    font-weight: bold;
+    margin: 25px 0 10px;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .skills,
+  .languages {
+    text-align: left;
+    font-size: 14px;
+  }
+
+  .content {
+    width: 65%;
+    padding: 40px 30px;
+    overflow-y: auto;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+
+  .subtitle {
+    color: #d69b6d;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .section {
+    margin-bottom: 25px;
+    margin-top: 50px;
+    padding: 0;
+  }
+
+  .section h2,
+  h3 {
+    font-size: 20px;
+    border-left: 4px solid #c4a584;
+    padding-left: 10px;
+    color: #333;
+  }
+
+  .job {
+    margin-bottom: 20px;
+  }
+
+  .job-title {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .job-company {
+    color: #9c8e84;
+    font-size: 14px;
+  }
+
+  .job-dates {
+    float: right;
+    font-size: 13px;
+    color: #555;
+  }
+
+  ul {
+    padding-left: 20px;
+    margin: 8px 0;
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  li {
+    line-height: 1.5;
+  }
+  .contact-info > p {
+    text-align: left;
+  }
+  .contact-info,
+  .skills,
+  .languages {
+    margin-bottom: 40px;
+  }
+  .a4-page ~ .a4-page {
+    page-break-before: always;
+    margin-top: 50px;
+  }
+  .contact-line > a {
+    text-decoration: none;
+    color: black;
+  }
+  @media print {
+    body {
+      background: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .a4-page ~ .a4-page {
+      margin-top: 0;
+    }
+    .a4-page {
+      box-shadow: none;
+      width: 210mm;
+      height: 297mm;
+      margin: 0;
+    }
+
+    .sidebar,
+    .content {
+      page-break-inside: avoid;
+      margin-top: 0;
+    }
+  }
