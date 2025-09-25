@@ -7,22 +7,18 @@ body {
   background: #ccc;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-family: Arial, sans-serif;
 }
 
-/* A4 Page Styling */
+/* Fixed A4 Page Layout */
 .a4-page {
-  width: 210mm;  /* A4 width */
+  width: 210mm; /* A4 width */
   height: 297mm; /* A4 height */
   background: white;
   display: flex;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  margin: 20px 0;
+  margin: 0 auto; /* Center the A4 page on the screen */
   padding: 20px;
 }
 
@@ -60,7 +56,7 @@ body {
   font-size: 14px;
 }
 
-/* Content Styling */
+/* Content Section */
 .content {
   width: 65%;
   padding: 40px 30px;
@@ -150,72 +146,21 @@ li {
   margin-top: 50px;
 }
 
-/* Responsive Design for Smaller Screens */
+/* Prevent Sideways Scrolling (Only for Desktop View) */
+html, body {
+  overflow-x: hidden;
+}
+
+/* No responsiveness, fixed layout for all screen sizes */
 @media (max-width: 1200px) {
   .a4-page {
-    flex-direction: column;
-  }
-
-  .sidebar {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .content {
-    width: 100%;
-    padding: 20px;
+    width: 210mm;
+    height: 297mm;
+    margin: 0 auto;
   }
 }
 
-/* Mobile View: 768px and below */
-@media (max-width: 768px) {
-  .a4-page {
-    flex-direction: column;
-    margin: 10px;
-  }
-
-  .sidebar {
-    width: 100%;
-    padding: 20px;
-    text-align: left;
-  }
-
-  .content {
-    width: 100%;
-    padding: 20px;
-  }
-
-  h1 {
-    font-size: 24px;
-  }
-
-  .subtitle {
-    font-size: 16px;
-  }
-
-  .job-title {
-    font-size: 14px;
-  }
-
-  .job-company {
-    font-size: 12px;
-  }
-
-  .job-dates {
-    font-size: 12px;
-  }
-
-  .list-title {
-    font-size: 14px;
-  }
-
-  p,
-  li {
-    font-size: 12px;
-  }
-}
-
-/* Print Styles */
+/* Print Styles - Fixed A4 Layout for Print */
 @media print {
   body {
     background: none;
@@ -223,25 +168,21 @@ li {
     margin: 0;
   }
 
-  .a4-page ~ .a4-page {
-    margin-top: 0;
-  }
-
   .a4-page {
     box-shadow: none;
-    width: 210mm;
-    height: 297mm;
+    width: 210mm; /* Fixed A4 width for print */
+    height: 297mm; /* Fixed A4 height for print */
     margin: 0;
-    page-break-before: always;  /* Ensures new content starts on a new page */
+    page-break-before: always; /* Ensures new content starts on a new page */
   }
 
   .sidebar,
   .content {
-    page-break-inside: avoid;  /* Prevent page break inside these sections */
+    page-break-inside: avoid; /* Prevent page break inside these sections */
     margin-top: 0;
   }
 
-  /* Prevent page overflow */
+  /* Prevent content overflow */
   .sidebar img {
     width: 100px;
     height: 100px;
@@ -255,6 +196,31 @@ li {
     font-size: 13px;
   }
 
+  /* Adjust font size for printing */
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .job-title {
+    font-size: 14px;
+  }
+
+  .job-company,
+  .job-dates {
+    font-size: 12px;
+  }
+
+  /* Ensure all content fits and does not overflow */
+  .job,
+  .section {
+    margin-bottom: 15px;
+  }
+
+  /* Adjust margins to ensure it fits A4 size */
   @page {
     margin: 20mm;
   }
