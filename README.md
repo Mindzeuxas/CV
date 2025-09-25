@@ -14,7 +14,7 @@ This project is for educational porpuses only. Pull request are welcome, but pri
   
   <ul>
     <li><a href="index.html" target="_blank">View My CV in English</a></li>
-    <li><a href="mindaugas_cv_LT.html" target="_blank">Ver mi CV en Español</a></li>
+    <li><a href="mindaugas_cv_LT.html" target="_blank">Mano CV lietuviškai</a></li>
   </ul>
 </section>
 
