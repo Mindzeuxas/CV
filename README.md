@@ -8,15 +8,10 @@ _website design project_
 
 This project is for educational porpuses only. Pull request are welcome, but priority for project authors! Thank you for your cooperation!
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>Check out my CV in the following languages:</p>
-  
-  <ul>
-    <li><a href="index.html" target="_blank">View My CV in English</a></li>
-    <li><a href="mindaugas_cv_LT.html" target="_blank">Mano CV lietuviškai</a></li>
-  </ul>
-</section>
+Check out my CV in two languages:
+
+- [View My CV in English](https://Mindzeuxas.github.io/CV/index.html)
+- [Peržiūrėti mano CV lietuviškai](https://Mindzeuxas.github.io/CV/mindaugas_cv_lt.html)
 
 ## 🎯 Project features/goals
 
