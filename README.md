@@ -11,7 +11,7 @@ This project is for educational porpuses only. Pull request are welcome, but pri
 Check out my CV in two languages:
 
 - [View My CV in English](https://Mindzeuxas.github.io/CV/index.html)
-- [Peržiūrėti mano CV lietuviškai](https://Mindzeuxas.github.io/CV/mindaugas_cv_lt.html)
+- [Peržiūrėti mano CV lietuviškai](https://Mindzeuxas.github.io/CV/mindaugas_cv_LT.html)
 
 ## 🎯 Project features/goals
 
